@@ -1,0 +1,9 @@
+name: Output GitHub Context Workflow
+on: issues
+
+jobs:
+  output_github_context:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print github context
+        run: echo {{ github }}
